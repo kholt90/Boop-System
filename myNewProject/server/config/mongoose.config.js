@@ -1,6 +1,7 @@
 ////// Database
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost/crmdb", {
+const uri = "mongodb+srv://keith:boop@boopity.qbsbv.mongodb.net/Boopity?retryWrites=true&w=majority";
+mongoose.connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
