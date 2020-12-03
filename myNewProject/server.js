@@ -8,6 +8,7 @@ require('./server/config/mongoose.config');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); 
 require('./server/routes/person.routes')(app); 
+app.get('/', (req,res) => res.send('MainLanding'));
 app.listen(8000, () => console.log(`Listening on port: 8000`) );
 
 
