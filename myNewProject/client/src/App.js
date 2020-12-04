@@ -12,10 +12,10 @@ function App() {
     <div className='App'>
       <Header/>
       <Router>
-        <Campfire path='./'/>
-        <Map path='./map/'/>
-        <Main path='./people/'/>
-        <Detail path='./people/:id'/>
+        <Campfire path='/'/>
+        <Map path='map/'/>
+        <Main path='people/'/>
+        <Detail path='people/:id'/>
       </Router>
     </div>
   );
