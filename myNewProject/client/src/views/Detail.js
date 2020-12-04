@@ -11,8 +11,8 @@ export default props => {
 
     return (
         <div>
-            <p>First Name: {person.firstName}</p>
-            <p>Last Name: {person.lastName}</p>
+            <p>Name: {person.characterName}</p>
+            <p>Strength: {person.strength}</p>
         </div>
     )
 }

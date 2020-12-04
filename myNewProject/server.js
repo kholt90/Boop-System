@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 require('./server/config/mongoose.config');
-// require('./server/routes/person.routes')(app);
-require('./server/routes/character.routes')(app);
+require('./server/routes/person.routes')(app);
+// require('./server/routes/character.routes')(app);
 
 app.listen(port, () => console.log(`Listening on port: ${port}`) );
