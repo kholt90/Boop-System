@@ -13,6 +13,11 @@ export default props => {
         <div>
             <p>Name: {person.characterName}</p>
             <p>Strength: {person.strength}</p>
+            <p>Strength: {person.dexterity}</p>
+            <p>Strength: {person.constitution}</p>
+            <p>Strength: {person.intelligence}</p>
+            <p>Strength: {person.wisdom}</p>
+            <p>Strength: {person.charisma}</p>
         </div>
     )
 }
