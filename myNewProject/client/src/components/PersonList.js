@@ -1,25 +1,15 @@
-import React from 'react';
+import React from 'react'
 import axios from 'axios';
-import { Link } from '@reach/router';
+import {Link} from '@reach/router';
+
 export default props => {
-    const { removeFromDom } = props;
-    const deletePerson = (personId) => {
-        axios.delete('http://localhost:8000/api/people/' + personId)
-            .then(res => {
-                removeFromDom(personId);
-            })
-    }
-    
     return (
         <div>
-            {props.people.map((person, idx) => {
+            {props.people.map((person, idx)=>{
                 return <p key={idx}>
-                    <Link to={"/people/" + person._id + "/edit"}>  {/* This is for update */} 
-                    {person.lastName}, {person.firstName}  
+                    <Link to={person._id}>
+                        {person.characterName}
                     </Link>
-                    <button onClick={(_e)=>{deletePerson(person._id)}}>
-                        Delete
-                    </button>
                 </p>
             })}
         </div>
