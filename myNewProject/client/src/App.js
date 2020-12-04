@@ -1,6 +1,7 @@
 import React from 'react';
 import {Router} from '@reach/router';
 import Header from './views/Header'
+import Campfire from './views/Campfire'
 import Map from './views/Map'
 import Main from './views/Main';
 import Detail from './views/Detail';
@@ -11,9 +12,10 @@ function App() {
     <div className='App'>
       <Header/>
       <Router>
-        <Map path='map/'/>
-        <Main path='people/'/>
-        <Detail path='people/:id'/>
+        <Campfire path='./'/>
+        <Map path='./map/'/>
+        <Main path='./people/'/>
+        <Detail path='./people/:id'/>
       </Router>
     </div>
   );
